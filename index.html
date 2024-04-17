@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingra Cultural</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div><img src="/images/logo.png" alt="" srcset=""></div>
+        <div>
+            <h1>Ingra Cultural</h1>
+            <p>Agenda 2024</p>
+        </div>
+    </header>
+    <div id="banner">
+        <img src="/images/espaço cultural.jpeg" alt="" srcset="">
+    </div>
+    <main>
+        <div id="busca">
+
+            <div id="evt">
+                <p>Eventos: <span id="total"></span></p>
+            </div>
+            
+            <div id="filtros">
+                <label for="evt-select">Tipo de evento:</label>
+                <select name="evento" id="evt-select">
+                    <option value="Todos">Todos</option>
+                    <option value="Apresentação">Apresentação</option>
+                    <option value="Exposição">Exposição</option>
+                    <option value="Passeios">Passeios</option>
+                    <option value="Oficinas">Oficinas</option>
+                    <option value="Artes">Artes</option>
+                    <option value="Musica">Musica</option>
+                </select>
+            </div>
+
+        </div>
+        <div id="cards">
+            <div class="card apresentacao">
+                <div class="data">
+                    <p>09</p>
+                    <p id="mes">abr</p>
+                </div>
+                <img class="card-image" src="/images/apresenta2.png" alt="">
+            </div>
+            <div class="card apresentacao">
+                <div class="data">
+                    <p>21</p>
+                    <p id="mes">abr</p>
+                </div>
+                <img class="card-image" src="/images/baianaE.png" alt="">
+            </div>
+            <div class="card musica">
+                <div class="data">
+                    <p>01</p>
+                    <p id="mes">mai</p>
+                </div>
+                <img class="card-image" src="/images/cantaE.png" alt="">
+            </div>
+            <div class="card apresentacao">
+                <div class="data">
+                    <p>14</p>
+                    <p id="mes">maio</p>
+                </div>
+                <img class="card-image" src="/images/apresenta400.png" alt="">
+            </div>
+            <div class="card Oficinas">
+                <div class="data">
+                    <p>03</p>
+                    <p id="mes">jun</p>
+                </div>
+                <img class="card-image" src="/images/apresenta3E.png" alt="">
+            </div>
+            <div class="card artes">
+                <div class="data">
+                    <p>09</p>
+                    <p id="mes">jun</p>
+                </div>
+                <img class="card-image" src="/images/criancasE.png" alt="">
+            </div>
+            <div class="card musica">
+                <div class="data">
+                    <p>17</p>
+                    <p id="mes">jun</p>
+                </div>
+                <img class="card-image" src="/images/dancaE.png" alt="">
+            </div>
+            <div class="card musica">
+                <div class="data">
+                    <p>25</p>
+                    <p id="mes">jun</p>
+                </div>
+                <img class="card-image" src="/images/danca2E.png" alt="">
+            </div>
+            <div class="card Oficinas">
+                <div class="data">
+                    <p>02</p>
+                    <p id="mes">ago</p>
+                </div>
+                <img class="card-image" src="/images/historiasE.png" alt="">
+            </div>
+            <div class="card artes">
+                <div class="data">
+                    <p>15</p>
+                    <p id="mes">ago</p>
+                </div>
+                <img class="card-image" src="/images/filmesE.png" alt="">
+            </div>
+            <div class="card musica">
+                <div class="data">
+                    <p>09</p>
+                    <p id="mes">set</p>
+                </div>
+                <img class="card-image" src="/images/musicaE.png" alt="">
+            </div>
+            <div class="card artes">
+                <div class="data">
+                    <p>25</p>
+                    <p id="mes">set</p>
+                </div>
+                <img class="card-image" src="/images/pedroE.png" alt="">
+            </div>
+            <div class="card musica">
+                <div class="data">
+                    <p>12</p>
+                    <p id="mes">out</p>
+                </div>
+                <img class="card-image" src="/images/danca3E.png" alt="">
+            </div>
+            <div class="card artes">
+                <div class="data">
+                    <p>15</p>
+                    <p id="mes">out</p>
+                </div>
+                <img class="card-image" src="/images/domingoLegalE.png" alt="">
+            </div>
+            <div class="card musica">
+                <div class="data">
+                    <p>02</p>
+                    <p id="mes">nov</p>
+                </div>
+                <img class="card-image" src="/images/musica3E.png" alt="">
+            </div>
+            <div class="card Oficinas">
+                <div class="data">
+                    <p>07</p>
+                    <p id="mes">nov</p>
+                </div>
+                <img class="card-image" src="/images/prisioneiroE.png" alt="">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.586815479008!2d-46.57073402592557!3d-23.47536405843599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef591052f59db%3A0xe8eb54927576161d!2sINSGRA!5e0!3m2!1spt-BR!2sbr!4v1713291854339!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="adress">
+            <p>Ingra - Instituto de Educação Nossa Senhora das Graças</p>
+            <p>Rua Carlos dos Santos, 1549 - Pq. Edu Chaves</p>
+            <p>CEP 02234-001 São Paulo/SP</p>
+        </div>
+        <div id="copyright">
+            <p>Visite nosso site</p>
+            <p>© 2024 Ingra Cultural. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

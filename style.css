@@ -1,0 +1,139 @@
+:root {
+    --cor-primaria: #005E32;
+    --cor-secundaria: #F2F2F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header {
+    margin: auto;
+    width: 90%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+    div:first-child {
+        width: 150px;
+        img {
+            width: 100%;
+        }
+    }
+}
+#banner {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    /* background-color: aqua; */
+    
+    img {
+        padding: 25px;
+        width: 100%;
+        margin: auto;
+    }
+}
+main {
+    width: 90%;
+    margin: auto;
+    padding: 25px;
+    /* background-color: aqua; */
+}
+#total {
+    background-color: rgba(17, 126, 70, 0.954);
+    color: white;
+    padding: 7px;
+    border-radius: 50%;
+}
+#busca {
+    /* background-color: burlywood; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 25px; */
+    #evt {
+        /* background-color: burlywood; */
+        width: 25%;
+    }
+}
+#gratis {
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+#filtros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background-color: bisque; */
+    width: 35%;
+}
+#cards {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin-top: 10px;
+    
+}
+.card {
+    position: relative;
+    /* background-color: blue;  */
+}
+.card-image {
+    width: 100%;
+    object-fit: contain;
+    
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(25, 210, 114, 0.858);
+    width: 15%;
+    height: 20%;
+    text-align: center;
+    color: white;
+    padding: 5px 0 0px 0;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 1.2em;
+    box-shadow: 1px 1px 5px white;
+    #mes {
+        font-size: 0.8em;
+        background-color: rgba(17, 126, 70, 0.954);
+        height: 45%;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+#mapa {
+    margin: auto;
+    width: 100%;
+    padding: 25px;
+}
+#adress {
+    float: right;
+    margin: auto;
+    width: calc(100% - 50px);
+    background-color: #005E32;
+    color: white;
+    padding: 25px;
+}
+#copyright {
+    text-align: center;
+    margin: 25px;
+}
