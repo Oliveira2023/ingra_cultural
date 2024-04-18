@@ -42,31 +42,28 @@ main {
     width: 90%;
     margin: auto;
     padding: 25px;
-    /* background-color: aqua; */
 }
 #total {
     background-color: rgba(17, 126, 70, 0.954);
-    color: white;
+    color: black;
     padding: 7px;
     border-radius: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
 }
 #busca {
-    /* background-color: burlywood; */
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     /* gap: 25px; */
     #evt {
-        /* background-color: burlywood; */
         width: 25%;
     }
 }
-#gratis {
-    /* background-color: aquamarine; */
-    display: flex;
-    align-items: center;
-    width: 10%;
-}
+
 #filtros {
     display: flex;
     flex-direction: row;
@@ -84,12 +81,18 @@ main {
 }
 .card {
     position: relative;
-    /* background-color: blue;  */
+    cursor: pointer;
+    overflow: hidden;
+}
+.card:hover {
+    .card-image {
+        transform: scale(1.05);
+    }
 }
 .card-image {
     width: 100%;
     object-fit: contain;
-    
+    transition: transform 0.5s ease;
 }
 .data {
     display: flex;
