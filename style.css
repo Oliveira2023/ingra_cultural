@@ -54,21 +54,19 @@ main {
     text-align: center;
 }
 #busca {
-    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* gap: 25px; */
-    #evt {
-        width: 25%;
-    }
+
+}
+#evt {
+    width: 25%;
 }
 
 #filtros {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* background-color: bisque; */
     width: 35%;
 }
 #cards {
@@ -139,4 +137,27 @@ footer {
 #copyright {
     text-align: center;
     margin: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    #cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    #busca {
+        
+        justify-content: space-around;
+    }
+    #filtros {
+        width: 40%;
+    }
+    #evt {
+        width: 40%;
+    }
+    header, main, #banner, #mapa, #adress, #copyright {
+        width: 100%;
+    }
+    evt-select {
+        border: 2px solid black;
+
+    }
 }
